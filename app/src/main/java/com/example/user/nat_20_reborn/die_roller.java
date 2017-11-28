@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class roller extends AppCompatActivity {
+public class die_roller extends AppCompatActivity {
     //give buttons names and pre declare them
     String tag = "Lifecycle Step";
     Button d20, d4, d6, d10, d12, percentile, d8;
@@ -27,7 +27,7 @@ public class roller extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(tag, "in the onCreate () event");
         // declare all the buttons
-        setContentView(R.layout.nat_20_roller);
+        setContentView(R.layout.activity_die_roller);
 
         d20 = (Button) findViewById(R.id.d20);
         d12 = (Button) findViewById(R.id.d12);
@@ -44,7 +44,7 @@ public class roller extends AppCompatActivity {
 //    public static Intent swap_roller(Context context){
 //        return new Intent(context, roller.class);
 
-//    }
+    //    }
     //end test
     @Override
     public void onStart()
@@ -149,7 +149,7 @@ public class roller extends AppCompatActivity {
         Log.d(tag, "in the onDestroy() event");
     }
 
-    public static Intent rollerSwap (Context context){
+    public static Intent die_rollerSwap (Context context){
         return new Intent(context, roller.class);
     }
 

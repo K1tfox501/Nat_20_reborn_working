@@ -16,16 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".roller">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-
+        <activity android:name=".die_roller"></activity>
+        <activity android:name=".roller"></activity>
+        <activity android:name=".Search"></activity>
     </application>
 
 </manifest>
